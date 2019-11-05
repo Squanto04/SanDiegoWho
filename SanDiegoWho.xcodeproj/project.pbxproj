@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		35A75F992371F4AD009E8E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A75F982371F4AD009E8E85 /* AppDelegate.swift */; };
+		35A75F9B2371F4AD009E8E85 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A75F9A2371F4AD009E8E85 /* SceneDelegate.swift */; };
+		35A75FA02371F4AD009E8E85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A75F9E2371F4AD009E8E85 /* Main.storyboard */; };
+		35A75FA22371F4B0009E8E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35A75FA12371F4B0009E8E85 /* Assets.xcassets */; };
+		35A75FA52371F4B0009E8E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35A75FA32371F4B0009E8E85 /* LaunchScreen.storyboard */; };
+		35A75FB02371F570009E8E85 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A75FAF2371F570009E8E85 /* Animal.swift */; };
+		35A75FB32371F626009E8E85 /* AnimalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A75FB22371F626009E8E85 /* AnimalController.swift */; };
+		35A75FB62371FB90009E8E85 /* AnimalMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A75FB52371FB90009E8E85 /* AnimalMapViewController.swift */; };
+		35A75FB82371FB9C009E8E85 /* AnimalProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A75FB72371FB9C009E8E85 /* AnimalProfileViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		35A75F952371F4AD009E8E85 /* SanDiegoWho.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanDiegoWho.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		35A75F982371F4AD009E8E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		35A75F9A2371F4AD009E8E85 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		35A75F9F2371F4AD009E8E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35A75FA12371F4B0009E8E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		35A75FA42371F4B0009E8E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		35A75FA62371F4B0009E8E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35A75FAF2371F570009E8E85 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		35A75FB22371F626009E8E85 /* AnimalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalController.swift; sourceTree = "<group>"; };
+		35A75FB52371FB90009E8E85 /* AnimalMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalMapViewController.swift; sourceTree = "<group>"; };
+		35A75FB72371FB9C009E8E85 /* AnimalProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalProfileViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35A75F922371F4AD009E8E85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		35A75F8C2371F4AD009E8E85 = {
+			isa = PBXGroup;
+			children = (
+				35A75F972371F4AD009E8E85 /* SanDiegoWho */,
+				35A75F962371F4AD009E8E85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		35A75F962371F4AD009E8E85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				35A75F952371F4AD009E8E85 /* SanDiegoWho.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35A75F972371F4AD009E8E85 /* SanDiegoWho */ = {
+			isa = PBXGroup;
+			children = (
+				35A75FAE2371F54E009E8E85 /* Models */,
+				35A75FB12371F617009E8E85 /* Model Controllers */,
+				35A75FB42371FB63009E8E85 /* View Controllers */,
+				35A75FAD2371F50E009E8E85 /* Storyboards */,
+				35A75FAC2371F4EF009E8E85 /* Resources */,
+			);
+			path = SanDiegoWho;
+			sourceTree = "<group>";
+		};
+		35A75FAC2371F4EF009E8E85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35A75FA12371F4B0009E8E85 /* Assets.xcassets */,
+				35A75F982371F4AD009E8E85 /* AppDelegate.swift */,
+				35A75F9A2371F4AD009E8E85 /* SceneDelegate.swift */,
+				35A75FA32371F4B0009E8E85 /* LaunchScreen.storyboard */,
+				35A75FA62371F4B0009E8E85 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		35A75FAD2371F50E009E8E85 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				35A75F9E2371F4AD009E8E85 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		35A75FAE2371F54E009E8E85 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				35A75FAF2371F570009E8E85 /* Animal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35A75FB12371F617009E8E85 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35A75FB22371F626009E8E85 /* AnimalController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		35A75FB42371FB63009E8E85 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				35A75FB52371FB90009E8E85 /* AnimalMapViewController.swift */,
+				35A75FB72371FB9C009E8E85 /* AnimalProfileViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		35A75F942371F4AD009E8E85 /* SanDiegoWho */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35A75FA92371F4B0009E8E85 /* Build configuration list for PBXNativeTarget "SanDiegoWho" */;
+			buildPhases = (
+				35A75F912371F4AD009E8E85 /* Sources */,
+				35A75F922371F4AD009E8E85 /* Frameworks */,
+				35A75F932371F4AD009E8E85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SanDiegoWho;
+			productName = SanDiegoWho;
+			productReference = 35A75F952371F4AD009E8E85 /* SanDiegoWho.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		35A75F8D2371F4AD009E8E85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Squanto Inc";
+				TargetAttributes = {
+					35A75F942371F4AD009E8E85 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 35A75F902371F4AD009E8E85 /* Build configuration list for PBXProject "SanDiegoWho" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 35A75F8C2371F4AD009E8E85;
+			productRefGroup = 35A75F962371F4AD009E8E85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				35A75F942371F4AD009E8E85 /* SanDiegoWho */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35A75F932371F4AD009E8E85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A75FA52371F4B0009E8E85 /* LaunchScreen.storyboard in Resources */,
+				35A75FA22371F4B0009E8E85 /* Assets.xcassets in Resources */,
+				35A75FA02371F4AD009E8E85 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35A75F912371F4AD009E8E85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35A75FB62371FB90009E8E85 /* AnimalMapViewController.swift in Sources */,
+				35A75F992371F4AD009E8E85 /* AppDelegate.swift in Sources */,
+				35A75F9B2371F4AD009E8E85 /* SceneDelegate.swift in Sources */,
+				35A75FB02371F570009E8E85 /* Animal.swift in Sources */,
+				35A75FB82371FB9C009E8E85 /* AnimalProfileViewController.swift in Sources */,
+				35A75FB32371F626009E8E85 /* AnimalController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		35A75F9E2371F4AD009E8E85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35A75F9F2371F4AD009E8E85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		35A75FA32371F4B0009E8E85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35A75FA42371F4B0009E8E85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		35A75FA72371F4B0009E8E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		35A75FA82371F4B0009E8E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		35A75FAA2371F4B0009E8E85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EANQJ7L949;
+				INFOPLIST_FILE = "$(SRCROOT)/SanDiegoWho/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.squantoinc.SanDiegoWho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35A75FAB2371F4B0009E8E85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EANQJ7L949;
+				INFOPLIST_FILE = "$(SRCROOT)/SanDiegoWho/Resources/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.squantoinc.SanDiegoWho;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		35A75F902371F4AD009E8E85 /* Build configuration list for PBXProject "SanDiegoWho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A75FA72371F4B0009E8E85 /* Debug */,
+				35A75FA82371F4B0009E8E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35A75FA92371F4B0009E8E85 /* Build configuration list for PBXNativeTarget "SanDiegoWho" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35A75FAA2371F4B0009E8E85 /* Debug */,
+				35A75FAB2371F4B0009E8E85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 35A75F8D2371F4AD009E8E85 /* Project object */;
+}
