@@ -9,22 +9,38 @@
 import UIKit
 
 class AnimalProfileViewController: UIViewController {
+    
+    var animal: Animal? {
+        didSet {
+            loadViewIfNeeded()
+            updateViews()
+        }
+    }
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var cohortLabel: UILabel!
+    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var characteristicLabel: UILabel!
+    @IBOutlet weak var animalImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        AnimalController.shared.saveToPersistentStore()
+        updateDesign()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateViews() {
+        guard let animal = animal else { return }
+        animalImageView.image = UIImage(named: animal.image)
+        nameLabel.text = animal.person
+        cohortLabel.text = animal.cohort
+        ageLabel.text = "\(animal.age)"
+        characteristicLabel.text = animal.characteristic
     }
-    */
+
+    func updateDesign() {
+        animalImageView.layer.cornerRadius = animalImageView.frame.height / 2
+    }
 
 }

@@ -9,22 +9,27 @@
 import UIKit
 
 class AnimalMapViewController: UIViewController {
+    
+    var senderTag: Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    // MARK: - Actions
+    @IBAction func animalButtonTapped(_ sender: UIButton) {
+        self.senderTag = sender.tag - 1
+        performSegue(withIdentifier: "toProfileDetailVC", sender: self)
     }
-    */
+    
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toProfileDetailVC" {
+            guard let destinationVC = segue.destination as? AnimalProfileViewController else { return }
+            let objectToSend = AnimalController.shared.animals[senderTag]
+            destinationVC.animal = objectToSend
+        }
+    }
 
 }
